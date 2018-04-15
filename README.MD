@@ -1,7 +1,3 @@
-
-=================================
-This application is user filter application.
-
 Configuration details for this application
 ------------------------------------------
 
@@ -12,11 +8,8 @@ Once you have installed above requirements then follow these instruction to conf
 clone/download this application repository into your local machine.
 then navigate to users_filter_app directory and execute the following commands
 
-
-```
-In notes_app/notes_app directory , execute the command
+In users_filter_app directory , execute the command
 $ pip install -r requirements.txt
-```
 
 this will install all require application dependencies.
 As we used the MySql database , set the username , password , database name
