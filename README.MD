@@ -9,20 +9,36 @@ clone/download this application repository into your local machine.
 then navigate to users_filter_app directory and execute the following commands
 
 In users_filter_app directory , execute the command
-$ pip install -r requirements.txt
+    
+    pip install -r requirements.txt
 
 this will install all require application dependencies.
 As we used the MySql database , set the username , password , database name
-in settings.py and then execute the command : 
-$ python manage.py makemigrations
-$ python manage.py migrate 
+in settings.py and then execute the command 
+
+    python manage.py makemigrations
+    python manage.py migrate 
 
 To start this application just run the following command
 
     python manage.py runserver
 
-This will start the Django server, you can access the applicaiton on your browser using this url.
+Create a Admin/Superuser by command 
 
+    python manage.py createsuperuser
+
+Then to create recruiters go the the admin panel using url
+
+	http://localhost:8000/admin/
+    To access the admin panel give login credentials of admin
+    then create recruiters in Users Table
+    create employes with their resume details in Employees Table
+
+
+You can access the application on your browser using this url.
+
+	http://localhost:8000/login
+	Give the login credentials and then it will redirect to the url:
 	http://localhost:8000/search
 
 

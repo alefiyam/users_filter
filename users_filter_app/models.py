@@ -4,7 +4,8 @@ from __future__ import unicode_literals
 from django.db import models
 # from django.contrib.auth.models import User
 from django.utils import timezone
-
+from datetime import date
+import datetime
 # Create your models here.
 
 
@@ -41,4 +42,4 @@ class User(models.Model):
         return self.name
 
     class Meta:
-        ordering = ['name']
+        verbose_name = "employee"
